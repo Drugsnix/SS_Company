@@ -21,10 +21,15 @@
 </head>
 <body>
     <div id="app">
+        <!--Body for all that extends-->
+        @include('includes.header')
         @include('includes.navbar')
+        <!--Wraps all content in a container -->
         <div class = "container">
             @yield('content')
         </div>
+        <!-- footer -->
+        @include('includes.footer')
     </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
-@include('includes.header')
-@include('includes.navbar')
-
+@extends('layouts.app')
+<!-- Sets all code in section to body of layout -->
+@section('content')
 <!--Secures only logged in users can acces the system -->
 @guest
  <!-- if guest -->
@@ -234,5 +234,6 @@
 
 </script>
 -->
-@include('includes.footer')
 @endguest
+<!-- Ends content section -->
+@endsection

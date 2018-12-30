@@ -1,5 +1,6 @@
-@include('includes.header')
-@include('includes.navbar')
+<!-- Use layout; section content = body -->
+@extends('layouts.app')
+@section('content')
 
 <!--Secures only logged in users can acces the system -->
 @guest
@@ -8,6 +9,8 @@
 @else
 <!-- if logged in -->
 <h1>report page</h1>
-@include('includes.footer')
 
 @endguest
+
+<!-- Ends content section -->
+@endsection

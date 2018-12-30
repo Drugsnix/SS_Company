@@ -1,5 +1,6 @@
-@include('includes.header')
-@include('includes.navbar')
+<!-- Use layout; section content = body -->
+@extends('layouts.app')
+@section('content')
 
 <!--Secures only logged in users can acces the system -->
 @guest
@@ -13,3 +14,6 @@
 @include('includes.footer')
 
 @endguest
+
+<!-- Ends content section -->
+@endsection

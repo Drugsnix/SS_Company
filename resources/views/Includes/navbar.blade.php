@@ -2,11 +2,11 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel p-0 shadow">
     <div class="container">
         <a class="navbar-brand " href="http://127.0.0.1:8000/">SS Company IVS</a>
-        <!--??-->
+      <!-- UNUSED CODE
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
-
+        UNUSED CODE -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
