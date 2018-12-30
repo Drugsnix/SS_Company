@@ -4,10 +4,12 @@
 <!--Secures only logged in users can acces the system -->
 @guest
  <!-- if guest -->
- @include('includes.login')
  
+ @include('includes.loginInclude')
 @else
 <!-- if logged in -->
-test
+
+<h1>customer page</h1>
 @include('includes.footer')
+
 @endguest

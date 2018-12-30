@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'PagesController@index');
-
+Route::get('/customer','PagesController@customer');
+Route::get('/employee','PagesController@employee');
+Route::get('/report','PagesController@report');
 
 Auth::routes();
 
