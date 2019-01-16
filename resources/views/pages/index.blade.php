@@ -1,11 +1,10 @@
-@extends('layouts.app')
-<!-- Sets all code in section to body of layout -->
-@section('content')
+@include('includes.header')
+@include('includes.navbar')
+
 <!--Secures only logged in users can acces the system -->
 @guest
  <!-- if guest -->
- @include('includes.login')
- 
+ @include('includes.loginInclude')
 @else
 <!-- if logged in -->
 <div class="container-fluid">
@@ -20,25 +19,23 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="/report">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/report">
                             <span data-feather="file"></span>
                             Reports
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="/employee">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/employee">
                             <span data-feather="users"></span>
                             Employees
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="/customer">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/customer">
                             <span data-feather="users"></span>
                             Customers
                         </a>
                     </li>
-
-
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -108,17 +105,17 @@
                             <!-- Til -->
                             <td>16:00</td>
                             <!--Timer u. tillæg-->
-                            <td>#</td>
+                            <td>0.75</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>0</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>0.75t</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>10</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>10-Oct</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>400</td>
                             <!-- # -->
                             <td><div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -132,11 +129,25 @@
 </div></td>
                         </tr>
                         <tr>
-                            <td>02</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
+                            <td>10-Jan</td>
+                            <td>8:00</td>
+                            <td>16:00</td>
+                            <td>1.45</td>
+                            <td>0</td>
+                            <td>1.45t</td>
+                            <td>10</td>
+                            <td>10-Jan</td>
+                            <td>442</td>
+                            <td><div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Vælg
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Ja</a>
+    <a class="dropdown-item" href="#">Nej</a>
+
+  </div>
+</div></td>
                         </tr>
                     </tbody>
                 </table>
@@ -234,6 +245,6 @@
 
 </script>
 -->
+@include('includes.footer')
+
 @endguest
-<!-- Ends content section -->
-@endsection
